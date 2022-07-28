@@ -1,0 +1,30 @@
+package demo;
+
+public class selenium {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "‪C:\\driver\\chromedriver.exe");
+		WebDriver driver = new Chrome.Driver();
+		driver.get("http://the-internet.herokuapp.com/");
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath("//div[@class='figure'][1]/img"))).build().perfom();
+		string username = (driver.findElement(By.xpath("//div[@class='figure'][1]/div/h5"))).getText();
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
